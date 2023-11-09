@@ -3,16 +3,16 @@
 # This ops challenges is about conditinal statement of if else statements and how they work
 # We are going to take a varibale with the number and have the computer tell us if its greater than 5 less than 5 or equals 5
 
-number=
+# number=
 
 echo "Pick a number between 1 and 09 (0-9)"
 
 read number
 
-if [ $number = 05 ]; then
+if [[ $number = 05 ]]; then    
     echo "$number is equal to 5"
-elif [ $number > 05]; then
-    echo "$number is greater than 5"
-elif [ $number < 05]; then
+elif [[ $number < 05 ]]; then    
     echo "$number is less than 5"
+elif [[ $number > 05 ]]; then
+    echo "$number is greater than 5"
 fi
