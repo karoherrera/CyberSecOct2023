@@ -1,66 +1,75 @@
-# Write a multi-line comment with your name, favorite food, and dream job on 3 different lines.
-'''
-I am Karoline.
-My favorite food is Italian food. 
-My dream job is 
-'''
+# Objectives
+# Create if statements using these logical conditionals below. Each statement should print information to the screen depending on if the condition is met.
 
-# assign 5 different data types to 5 different variables. At least one datatype must be a string.
-integer=27
-string="Hello Savvy Coders!"
-float=5.29
-boolean=True
-list=[1, 2, 3]
+# Equals: a == b
+# Not Equals: a != b
+# Less than: a < b
+# Less than or equal to: a <= b
+# Greater than: a > b
+# Greater than or equal to: a >= b
 
-# print the length of your string.
-print(len(list))
+a = 33
+b = 200
+if a < b:
+    print("a is less than b")
 
-# create a new variable called savvy, and assign it the string with this phrase "Learning Python is Awesome!"
-savvy="Learning Python is Awesome"
 
-# Replace "Awesome" with "great" in the string
-new_savvy=savvy.replace("Awesome", "Great")
+# Create an if statement using a logical conditional of your choice and include elif keyword that executes when other conditions are not met.
+a = 33
+b = 33
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
 
-# Create and assign 3 more variables called name, age and length using the multi-variable naming method.
-name, age, length = "Karoline", 27, 150
+# Create an if statement that includes both elif and else to execute when both if and elif are not met.
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
 
-# Format a new string called 'miniBio' using variables in curly brackets to complete this phrase... "Hi my name is (name), I am (tall) and (so) old today."
-miniBio=(f"Hi my name is {name}, I am {length}, and I am {age} old today")
-print(miniBio)
 
-# Create a list of at least 5 elements of mixed data types
-list1=[6, "python", {"Karoline":29}, 3.14]
+# Stretch Goals (Optional Objectives)
 
-# replace a part of it with something else
-list1[2]="age"
-print(list1)
+# Pursue stretch goals if you are a more advanced user or have remaining lab time.
 
-# append or insert several more items to the list
-list1.append(27)
-list1.insert(1, True)
+# Create an if statement with two conditions by using and between conditions.
 
-# find and print the length of the list
-print(len(list1))
+# Create an if statement with two conditions by using or between conditions.
 
-# slice a sub-section of the 1st list, and save it to a different 2nd list
-list2=list1[1:2]
+# Create a nested if statement.
 
-# print the 2nd list
-print(list2)
+# Create an if statement that includes pass to avoid errors.
 
-# extend your original list with the 2nd list sliced above
-list1=list2[1:2]
 
-# Create a new list called "simList" containing at least 5 elements of the same data type, either string, integer, float, or Boolean.
-simList=[11, 71, 1, 23, 100]
+# Other examples we went over.
+#a = input("Enter a number for a")
+#b = input("Enter a number for b")
 
-# sort "simList", and print the list
-simList.sort()
-print(simList)
+#if (a == b):
+#    print("a equals b")
+#    if a < b and a != b:
+#       print("a is less than and not equal to b")
+#    else:a != b or a > b
+#    print("a is greater than b")
 
-# copy the "simList" list to another 3rd list
-list3=simList.copy()
+#if a < b:
+#    print("a is less than b")
 
-# add the 2nd and 3rd lists together into a 4th list
-list4=list2 + list3
-print(list4)
+#if b > a:
+#    print("b is greater than a")
+#elif a == b:
+#    print("a and b are equal")
+
+#a = 200
+#b = 33
+#if b > a:
+#  print("b is greater than a")
+#elif a == b:
+#  print("a and b are equal")
+#else:
+#  print("a is greater than b")
